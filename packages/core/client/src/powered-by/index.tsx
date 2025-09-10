@@ -35,14 +35,14 @@ export const PoweredBy = () => {
     }
   `;
   const appVersion = `<span class="nb-app-version">v${data?.data?.version}</span>`;
-
+// <a href="${urls[i18n.language] || urls['en-US']}" target="_blank">NocoBase</a>
   return (
     <div
       className={cx(style, 'nb-brand')}
       dangerouslySetInnerHTML={{
         __html: parseHTML(
           customBrandPlugin?.options?.options?.brand ||
-            `Powered by <a href="${urls[i18n.language] || urls['en-US']}" target="_blank">NocoBase</a>`,
+            `Powered by crsvtea@gmail.com`,
           { appVersion },
         ),
       }}
